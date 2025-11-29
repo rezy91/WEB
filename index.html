@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pozvánka na oslavu</title>
+<style>
+body {
+    font-family: 'Georgia', serif;
+    background: #faf9f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #3a3a3a;
+}
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #4a5542;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.decor-top, .decor-bottom {
+    width: 100%;
+    pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Eukalyptus + eustoma stylizovaná grafika -->
+<svg class="decor-top" height="140" viewBox="0 0 800 200" preserveAspectRatio="none">
+<defs>
+<linearGradient id="leaf" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0%" stop-color="#8fae8e"/>
+  <stop offset="100%" stop-color="#6f8c75"/>
+</linearGradient>
+<linearGradient id="petal" x1="0" x2="0" y1="0" y2="1">
+  <stop offset="0%" stop-color="#f6d7e7"/>
+  <stop offset="100%" stop-color="#e8a8c8"/>
+</linearGradient>
+</defs>
+
+<!-- Eukalyptus listy -->
+<circle cx="120" cy="70" r="40" fill="url(#leaf)" opacity="0.9"/>
+<circle cx="180" cy="40" r="30" fill="url(#leaf)" opacity="0.85"/>
+<circle cx="240" cy="75" r="35" fill="url(#leaf)" opacity="0.9"/>
+
+<!-- Eustoma květ -->
+<ellipse cx="640" cy="70" rx="45" ry="35" fill="url(#petal)" opacity="0.9"/>
+<ellipse cx="665" cy="70" rx="30" ry="25" fill="#ffffff" opacity="0.8"/>
+<circle cx="665" cy="70" r="8" fill="#d27aa7" />
+</svg>
+
+<div class="container">
+    <h1>Oslavíme Kačky svátek!</h1>
+    <p>Máš tímto srdečné pozvání na oslavu svátku<br><strong>Kačky Řezáčové</strong>.</p>
+    <p>Koná se <strong>zítra od 14:00</strong>.</p>
+    <p>Těšíme se na Tebe!</p>
+</div>
+
+<!-- Dolní dekorace -->
+<svg class="decor-bottom" height="140" viewBox="0 0 800 200" preserveAspectRatio="none">
+<circle cx="680" cy="120" r="40" fill="url(#leaf)" opacity="0.9"/>
+<circle cx="620" cy="150" r="30" fill="url(#leaf)" opacity="0.85"/>
+<circle cx="560" cy="115" r="35" fill="url(#leaf)" opacity="0.9"/>
+
+<ellipse cx="160" cy="130" rx="45" ry="35" fill="url(#petal)" opacity="0.9"/>
+<ellipse cx="135" cy="130" rx="30" ry="25" fill="#ffffff" opacity="0.8"/>
+<circle cx="135" cy="130" r="8" fill="#d27aa7" />
+</svg>
+
+</body>
+</html>
